@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jagat Saji</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+.wrapper{
+    width: 1001px;
+    margin: auto;
+    position: relative;
+}
+.logo a{
+    font-size: 30px;
+    font-weight: 800;
+    color: #f8f6f5;
+    float: left;
+}
+.menu{ float: right; }
+nav{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(5,5,0);
+    z-index: 1;
+}
+nav ul{ list-style-type: none; margin: 0; padding: 0; overflow: hidden; }
+nav ul li{ float: left; }
+nav ul li a{
+    color: rgb(244,242,242);
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+}
+nav ul li a:hover{ text-decoration: underline; }
+a.order{
+    background: #f0960e;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.menu-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.kartu{
+    width: 30%;
+    background: #fde5b5;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.kartu img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+.kartu h4{
+    margin: 10px 0 5px 0;
+}
+.kartu p{
+    font-size: 11px;
+    color: #444;
+    line-height: 1.4;
+}
+footer{
+    background: rgb(5,5,0);
+    color: white;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+</style>
+<body>
+
+<!-- navbar -->
+<nav>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="">JagatSaji</a>
+        </div>
+        <div class="menu">
+            <ul> 
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#online">Menu</a></li>
+                <li><a href="#offline">Rekanan</a></li>
+                <li><a href="#partners" style="margin-right: 100px;">Hubungi Kami</a></li>
+                <li><img src="scc.jpg" style="width: 20px; height: auto; margin-right: 10px;"></li>
+                <li><img src="akun.jpg" style="width: 20px; height: auto; margin-right: 10px;"></li>
+                <li><img src="buy.jpg" style="width: 20px; height: auto; margin-right: 30px;"></li>
+                <li><a href="#" class="order">Pesan Disini</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- hero -->
+<section id="home">
+    <div class="wrapper" style="display: flex; align-items: center; padding: 50px 0;">
+        <div style="width: 55%;">
+            <h1 style="color: #e89a4f; font-size: 38px;">Sajian Masakan Indonesia</h1>
+            <p style="margin-top: 15px; font-size: 13px; line-height: 1.6;">
+                Nikmati kelezatan resep warisan leluhur yang diolah dari bumbu rempah pilihan. Dari Sabang sampai Merauke, kami menghadirkan kehangatan tradisi Indonesia langsung ke meja makan Anda. Jelajah Rasa Kuliner Nusantara dengan keaslian rempah, kesegaran bahan, dan kehangatan tradisi dalam setiap sajian. Pesan sekarang dan nikmati kelezatan masakan khas Indonesia!
+            </p>
+            <a href="#menu" class="btn-pesan" style="background: #f0960e; color: white; padding: 8px 15px; border-radius: 20px; display: inline-block; margin-top: 15px; text-decoration: none; font-weight: bold; font-size: 13px;">pesan sekarang</a>
+        </div>
+        <div style="width: 40%; margin-left: 30px;">
+            <img src="nasikuning.jpg" style="width: 100%; border-radius: 15px;">
+        </div>
+    </div>
+</section>
+
+<hr>
+
+<!-- menu -->
+<section id="menu">
+    <div class="wrapper">
+        <h2 style="text-align: center; color: #e89a4f; margin: 30px 0;">Pilihan Menu</h2>
+        <div class="menu-grid">
+
+            <div class="kartu">
+                <img src="nasikuning.jpg">
+                <h4>Nasi Kuning</h4>
+                <p>Memiliki cita rasa yang gurih dengan warna kuning cerah, membuat hidangan ini disukai banyak orang.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="gadogado.jpg">
+                <h4>Gado-gado</h4>
+                <p>Salah satu makanan khas Indonesia yang terdiri dari aneka sayuran yang disiram bumbu sambal kacang.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="nasiuduk.jpg">
+                <h4>Nasi Uduk</h4>
+                <p>Nasi Uduk adalah salah satu hidangan khas Betawi Jakarta yang terbuat dari beras yang dimasak dengan santan.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="nasidaunjeruk.jpg">
+                <h4>Nasi Daun Jeruk</h4>
+                <p>Nasi Daun Jeruk adalah salah satu kreasi olahan nasi khas Indonesia yang terkenal dengan keharuman aromanya.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="nasipecel.jpg">
+                <h4>Nasi Pecel</h4>
+                <p>Nasi Pecel berupa nasi putih yang disajikan dengan aneka sayuran rebus lalu disiram bumbu sambal kacang.</p>
+            </div>
+
+            <div class="kartu">
+                <img src="rujakcingur.jpg">
+                <h4>Rujak Cingur</h4>
+                <p>Rujak Cingur merupakan salah satu makanan tradisional khas Jawa Timur yang terkenal dengan perpaduan rasa.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer>
+    <div class="wrapper">
+        <div style="display: flex; justify-content: space-between; padding-top: 20px;">
+            <div>
+                <h4>Contact Us</h4>
+                <p>Location in skaneda<br>WA 08111122234<br>JagatSaji@gmail.com</p>
+            </div>
+            <div style="text-align: center;">
+                <h2>JagatSaji</h2>
+                <p>Kuliner SMK Negeri 2 Mojokerto</p>
+            </div>
+            <div>
+                <h4>Opening Hours</h4>
+                <p>Everyday 10.00 Am - 18.00 Pm</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 20px; font-size: 12px; color: #aaa; border-top: 1px solid #222; padding-top: 10px;">
+            &copy; 2026 All Right Reserved By rpl_skaneda
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
